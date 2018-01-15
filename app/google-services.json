@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "647891875408",
+    "firebase_url": "https://grouplotto-b7874.firebaseio.com",
+    "project_id": "grouplotto-b7874",
+    "storage_bucket": "grouplotto-b7874.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647891875408:android:8a23b27630e42656",
+        "android_client_info": {
+          "package_name": "com.grouplotto.doyle.grouplotto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647891875408-5vl1oc6mb0vko8eqttph43pp7s9ss9nn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grouplotto.doyle.grouplotto",
+            "certificate_hash": "9bf2c191baff0ad87b6e91b2f75485e14bdce5b1"
+          }
+        },
+        {
+          "client_id": "647891875408-h6p117mruntnjdcat73flrs5td0jbfag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUAocRVI4oXRJ4WJ2hBIas-o4XpSrePvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647891875408-h6p117mruntnjdcat73flrs5td0jbfag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
