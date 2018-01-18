@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
         findViewById(R.id.textViewSignup).setOnClickListener(this);
+        findViewById(R.id.textViewReset).setOnClickListener(this);
         findViewById(R.id.buttonLogin).setOnClickListener(this);
 
     }
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                    Intent intent = new Intent(MainActivity.this, LandingActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 } else {
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (mAuth.getCurrentUser() != null) {
             finish();
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, LandingActivity.class));
         }
     }
 
@@ -99,6 +100,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textViewSignup:
                 finish();
                 startActivity(new Intent(this, SignUpActivity.class));
+                break;
+
+            case R.id.textViewReset:
+                finish();
+                startActivity(new Intent(this, ResetActivity.class));
                 break;
 
             case R.id.buttonLogin:
