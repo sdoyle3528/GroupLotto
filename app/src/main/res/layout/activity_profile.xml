@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context="com.grouplotto.doyle.grouplotto.ProfileActivity">
-
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary" />
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grouplotto.doyle.grouplotto.ProfileActivity">
 
 <TextView
     android:layout_width="match_parent"
@@ -27,8 +22,9 @@ tools:context="com.grouplotto.doyle.grouplotto.ProfileActivity">
         android:id="@+id/imageView"
         android:layout_width="170dp"
         android:layout_height="170dp"
+        android:layout_below="@+id/progressbar"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/icon_camera"
         android:scaleType="centerCrop" />
 
@@ -42,30 +38,36 @@ tools:context="com.grouplotto.doyle.grouplotto.ProfileActivity">
 
 </RelativeLayout>
 
-<EditText
-    android:id="@+id/editTextDisplayName"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Enter Display Name" />
+    <EditText
+        android:id="@+id/editTextDisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Display Name"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="257dp" />
 
-<TextView
-    android:id="@+id/textViewVerified"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Verified"
-    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    <TextView
+        android:id="@+id/textViewVerified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verified"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="310dp" />
 
-<Button
-    android:id="@+id/buttonSave"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="25dp"
-    android:background="@drawable/rounded_button_solid"
-    android:paddingLeft="55dp"
-    android:paddingRight="55dp"
-    android:text="Save"
-    android:textAllCaps="false" />
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_solid"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="356dp" />
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout >
